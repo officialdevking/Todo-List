@@ -1,0 +1,155 @@
+@import 'config';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: $font-stack;
+    font-size: $font-S;
+    background-color: hsl(235, 21%, 11%);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://res.cloudinary.com/devking/image/upload/v1634404324/Frontend%20Mentor%20%7C%20Todo%20app/bg-desktop-dark_juspcm.jpg);
+    height: 250px;
+    width: 100%;
+
+    .heading{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headies{
+        display: flex;
+        justify-content: space-between;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        justify-content: space-between;
+        margin-top: 70px;
+
+        h1{
+            color: white;
+        }
+    }
+    .add_todos{
+        display: flex;
+        align-items: center;
+        background-color: hsl(235, 24%, 19%);
+        width: 450px;
+        height: 50px;
+        border-radius: 5px;
+        margin: 40px 0 20px 0;
+    }
+    input[type="checkbox"]{
+        width: 1.3em;
+        height: 1.3em;
+        min-width: 1.3em;
+        background-color: transparent;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    input[type="checkbox"]:checked{
+        background: url(https://res.cloudinary.com/devking/image/upload/v1634404324/Frontend%20Mentor%20%7C%20Todo%20app/icon-check_poixaf.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    }
+    .bi{
+        margin-left: 20px;
+        color: white;
+    }
+    .add_todo{
+        padding: 10px 10px 10px 10px;
+        border: none;
+        outline: none;
+        width: 390px;
+        margin-left: 15px;
+        background-color: transparent;
+        color: hsl(234, 39%, 85%);
+        font-size: $font-S;
+    }
+    .added_todos{
+        display: flex;
+        align-items: center;
+        background-color: hsl(235, 24%, 19%);
+        width: 450px;
+        height: 50px;
+        border-bottom: 0.2px solid whitesmoke;
+    }
+    .checked{
+        text-decoration: line-through;
+        color: hsl(235, 24%, 19%);
+    }
+    .options{
+        display: flex;
+        align-items: center;
+        background-color: hsl(235, 24%, 19%);
+        width: 450px;
+        height: 50px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .add_class{
+        display: none;
+    }
+    .added{
+        margin-left: 25px;
+        color: hsl(234, 39%, 85%);
+        // max-width: 40px;
+        // line-break: ;
+    }
+    .options{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        padding: 0 10px;
+        color: hsl(233, 14%, 35%);
+        cursor: pointer;
+    }
+    .options p:hover{
+        color: hsl(236, 33%, 92%);
+    }
+    // .opt{
+    //     display: none;
+    // }
+    .items_left{
+        width: 100px;
+    }
+    .no_todo{
+        padding: 10px 20px;
+        color: white;
+        font-size: $font-S;
+    }
+    .less{
+        display: none;
+    }
+    // .items_left:hover{
+    //     color: hsl(236, 33%, 92%);
+    // }
+    // .status:hover{
+    //     color: hsl(236, 33%, 92%);
+    // }
+    // .clear:hover{
+    //     color: hsl(236, 33%, 92%);
+    // }
+    .status{
+        display: flex;
+        padding: 0 20px;
+        width: 45%;
+        justify-content: space-between;
+    }
+}
