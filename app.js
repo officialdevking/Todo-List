@@ -1,3 +1,4 @@
+'use strict'
 const clear = document.querySelector('.clear');
 const list = document.querySelector('.todo_wrap');
 const input = document.querySelector('.add_todo');
@@ -38,12 +39,12 @@ let id = 0;
 // completeTodo()
 
 LIST = [
-  {
-    name : "Drink a Coffee",
-    id : 0,
-    done : false,
-    trash : false
-  }
+  // {
+  //   name : "Drink a Coffee",
+  //   id : 0,
+  //   done : false,
+  //   trash : false
+  // }
   // {
   //   name : "workout",
   //   done : true,
